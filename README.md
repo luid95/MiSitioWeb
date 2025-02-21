@@ -46,5 +46,5 @@ Este es un proyecto web dinámico y responsivo que incluye:
 ### 🔹 **1. Clonar el Repositorio**
 Para descargar el código fuente del proyecto en tu computadora, abre la terminal y ejecuta:
 ```sh
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/luid95/MiSitioWeb.git
 cd tu-repositorio
