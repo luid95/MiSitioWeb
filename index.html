@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+  <!-- Encabezado principal -->
+  <header class="header-main">
+    <h1>Bienvenido a Mi Sitio Web</h1>
+  </header>
+
+  <!-- Navegación principal -->
+  <nav class="nav-main">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="pagina2.html" class="nav-link">Página 2</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección de presentación -->
+  <main class="main-content">
+    <section class="about-section">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        Este sitio demuestra el uso de <strong>HTML semántico</strong>, elementos de bloque y en línea, multimedia y más. 
+        Además, incluye caracteres especiales como &copy; y &euro;.
+      </p>
+      <img src="img/perfil.jpg" alt="Foto de perfil de Luis David Morales Alcántara" class="profile-image" width="300">
+    </section>
+
+    <!-- Formulario -->
+    <section class="form-section">
+      <h2>Formulario de Contacto</h2>
+      <form id="contact-form">
+        <fieldset class="fieldset-personal-info">
+          <legend>Información Personal</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="nombre" class="input-text" required>
+          
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad" placeholder="edad" class="input-number" min="0" max="120" required>
+        </fieldset>
+        
+        <fieldset class="fieldset-preferences">
+          <legend>Preferencias</legend>
+          <label for="color">Color favorito:</label>
+          <select id="color" name="color" class="select-color" required>
+            <option value="Rojo">Rojo</option>
+            <option value="Azul">Azul</option>
+            <option value="Verde">Verde</option>
+          </select>
+        </fieldset>
+        
+        <button type="submit" class="btn-submit">Agregar a la tabla</button>
+      </form>
+    </section>
+
+    <!-- Tabla dinámica -->
+    <section class="table-section">
+      <h2>Datos Ingresados</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Color Favorito</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Las filas se agregarán dinámicamente aquí -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Multimedia -->
+    <section class="media-section">
+      <h2>Contenido Multimedia</h2>
+      <article class="media-item">
+        <h3>Video de ejemplo</h3>
+        <video controls width="320" class="video-content">
+          <source src="multimedia/sample-video.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </article>
+
+      <article class="media-item">
+        <h3>Audio de ejemplo</h3>
+        <audio controls class="audio-content">
+          <source src="multimedia/sample-audio.mp3" type="audio/mpeg">
+          Tu navegador no soporta la reproducción de audio.
+        </audio>
+      </article>
+
+      <article class="media-item">
+        <h3>Video de YouTube</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6ux2Epq4o4g" 
+          title="YouTube video player" frameborder="0" allowfullscreen class="youtube-video">
+        </iframe>
+      </article>
+    </section>
+
+    <!-- Gráfico SVG -->
+    <section class="svg-section">
+      <h2>Gráfico SVG</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 36 36" fill="none" class="svg-graphic">
+        <rect width="36" height="36" rx="18" fill="#1877F2"/>
+        <path d="M22.675 18.196H19.625V27.33H15.874V18.196H14.145V14.86H15.874V13.118C15.874 10.932 17.02 9.669 19.063 9.669C19.944 9.669 20.664 9.731 20.917 9.763V12.601H19.398C18.308 12.601 18.088 13.1 18.088 13.835V14.86H21.056L20.675 18.196H18.088V27.33H22.675V18.196Z" fill="white"/>
+      </svg>      
+    </section>
+
+    <!-- Galería con Grid -->
+    <section class="gallery-section">
+      <h2>Galería de Imágenes</h2>
+      <div class="gallery-grid">
+        <img src="img/image1.jpeg" alt="Imagen 1">
+        <img src="img/image2.jpeg" alt="Imagen 2">
+        <img src="img/image3.jpeg" alt="Imagen 3">
+        <img src="img/image4.jpeg" alt="Imagen 4">
+        <img src="img/image5.jpeg" alt="Imagen 5">
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer-main">
+    <p>© 2024 Mi Sitio Web - Todos los derechos reservados. Luis David Morales Alcántara.</p>
+    <div class="contact-info">Correo: contacto@misitio.com | Tel: 123-456-7890</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
